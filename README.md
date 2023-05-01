@@ -4,6 +4,8 @@ This website is for documenting the knowledge and experience I gain during ASAC'
 
 ## Code 401 - Advanced Software Development
 
-### [Data Structures and Algorithms](./Code%20401/Data%20Structures%20and%20Algorithms/README.md).
-### [Engineering Readings](./Code%20401/Engineering%20Readings/README.md).
-### [SQL Practice](./Code%20401/SQL%20Practice/README.md).
+### [Data Structures and Algorithms](https://github.com/AymanMalkawi122/reading-notes/tree/main/Code%20401/Data%20Structures%20and%20Algorithms).
+
+### [Engineering Readings](https://github.com/AymanMalkawi122/reading-notes/tree/main/Code%20401/Engineering%20Readings).
+
+### [SQL Practice](https://github.com/AymanMalkawi122/reading-notes/tree/main/Code%20401/SQL%20Practice).
