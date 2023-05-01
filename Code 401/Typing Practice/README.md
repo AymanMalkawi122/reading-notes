@@ -1,7 +1,7 @@
 
 # Typing Practice
 
-## Compleated Tasks
+## Completed Tasks
 
 ### Task 1
 ![image](./images/lesson1.png)
