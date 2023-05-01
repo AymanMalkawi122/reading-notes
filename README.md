@@ -10,4 +10,4 @@ This website is for documenting the knowledge and experience I gain during ASAC'
 
 ### [SQL Practice](https://github.com/AymanMalkawi122/reading-notes/tree/main/Code%20401/SQL%20Practice).
 
-### [Typing Practice](https://github.com/AymanMalkawi122/reading-notes/tree/main/Code%20401/SQL%20Practice).
+### [Typing Practice](https://github.com/AymanMalkawi122/reading-notes/tree/main/Code%20401/Typing%20Practice).
