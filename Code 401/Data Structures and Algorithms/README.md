@@ -1,3 +1,4 @@
+# [HOME](../../README.md)
 # Data Structures and Algorithms
 ## Begin with a statement addressing why this topic matters as it relates to what you are studying in this module.
 This topic is extremely important because choosing the right data structure can boost the performance of our application dramatically. 

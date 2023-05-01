@@ -1,3 +1,4 @@
+# [HOME](../../README.md)
 # Engineering Readings
 ## Begin with a statement addressing why this topic matters as it relates to what you are studying in this module.
 Coding, in the beginning, may seem difficult or counter-intuitive but with the right tools and mindset for learning and dealing with new obstacles it becomes second nature, that's why this topic is important because it demonstrates to us how to tackle large problems, break them down to sub-problems and the correct mentality to have because, learning to code is like a marathon rather than a race. 
