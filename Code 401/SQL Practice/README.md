@@ -2,9 +2,9 @@
 # SQL Practice
 
 ## Summrization
-Relational databases are a powerful and flexible way to store, manage, and analyze large amounts of structured data,also they use SQL (Structured Query Language), With SQL we can perform a wide range of operations on the data, like reading, sorting, filtering, and joining tables together.
+Relational databases are a powerful and flexible way to store, manage, and analyze large amounts of structured data, that uses SQL (Structured Query Language), SQL can perform a wide range of operations on the data, like reading, sorting, filtering, and joining tables together.
 
-## Compleated Tasks
+## Completed Tasks
 
 ### Task 1
 ![image](./images/exe1.png)
