@@ -3,7 +3,7 @@
 
 ## Begin with a statement addressing why this topic matters as it relates to what you are studying in this module
 
-TDD helps ensure the correctness and functionality of our code, while packages and modules help you organize, modularize, and reuse your code efficiently, which helps us to adhere to the single responsibility rule.
+TDD helps ensure the correctness and functionality of our code, while packages and modules help us organize, modularize, and reuse our code efficiently, which helps us to adhere to the single responsibility rule.
 
 ## Reading  Questions
 
