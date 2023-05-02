@@ -13,3 +13,5 @@ This website is for documenting the knowledge and experience I gain during ASAC'
 ### [Typing Practice](https://github.com/AymanMalkawi122/reading-notes/tree/main/Code%20401/Typing%20Practice).
 
 ### [Prep Your Mindset](https://github.com/AymanMalkawi122/reading-notes/tree/main/Code%20401/Prep%20Your%20Mindset).
+
+### [The Command Line](https://github.com/AymanMalkawi122/reading-notes/tree/main/Code%20401/Prep%20Your%20Mindset).
