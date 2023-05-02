@@ -27,7 +27,7 @@ TDD helps ensure the correctness and functionality of our code, while packages a
 
 * Python modules are single files that contain Python code, while Python packages are collections of modules and internal packages.
 
-* To create a Python module, we can simply write our code in a file with the .py extension and save it in any directory. 
+* To create a Python module, we can simply write our code in a file with the .py extension and save it in any directory.
 
 * To create a package, we create a directory with an init.py file and add any number of modules or sub-packages to it.
 
