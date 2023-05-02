@@ -6,13 +6,16 @@ This topic is extremely important because choosing the right data structure can 
 Performance can be measured by how much resources the application takes up, like time and space but after advances in hardware technology, time usually has more priority over space.
 
 ## Discussion Questions
+
 1. What is 1 of the more important things you should consider when deciding which data structure is best suited to solve a particular problem?
 
 How read and write operations will be done on the data structure, for example, if I have five users and I want to store their data I could use a list of lists that will perform like this.
-* ADD: O(1) because we can add a new user to the end of the list and that's it 
+
+* ADD: O(1) because we can add a new user to the end of the list and that's it
 * DELETE, UPDATE, and READ: O(n) because these operations by themselves are not the reason for the O(n) complexity but the reason is that we have to find the user in the list before we can perform any operation.
 
 On the other hand, if we use a hash map to store our lists the performance will go as follows.
+
 * ADD: O(1) because we can add a new user to the hash map instantly in an ideal collision-free environment.
 * DELETE, UPDATE, and READ: O(1) because we can find the user in the hash map instantly in an ideal collision-free environment.
 
