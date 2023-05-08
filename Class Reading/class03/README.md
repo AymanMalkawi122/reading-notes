@@ -22,7 +22,7 @@
 * To read the entire content of the file, we can use the 'read()' method
 on the other hand, if we only want to read the first line of the file, we can use the 'readline()' method
 
-3. ### Describe the concept of recursion in Python
+3. ### Briefly describe the concept of exception handling in Python. How can the ‘try’, ‘except’, and ‘finally’ blocks be used to handle exceptions and ensure proper execution of code? Provide a simple example.
 
 * Exceptions are raised when an error or unexpected behavior occurs during program execution. Exception handling refers to the process of detecting and responding to these errors in a way that maintains the stability and correctness of the program.
 
