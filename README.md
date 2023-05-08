@@ -25,3 +25,5 @@ This website is for documenting the knowledge and experience I gain during ASAC'
 ### [Class 02](https://github.com/AymanMalkawi122/reading-notes/tree/main/Class%20Reading/class02).
 
 ### [Class 03](https://github.com/AymanMalkawi122/reading-notes/tree/main/Class%20Reading/class03).
+
+### [Class 04](https://github.com/AymanMalkawi122/reading-notes/tree/main/Class%20Reading/class04).
