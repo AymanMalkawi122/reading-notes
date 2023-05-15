@@ -31,3 +31,5 @@ This website is for documenting the knowledge and experience I gain during ASAC'
 ### [Linked Lists](https://github.com/AymanMalkawi122/reading-notes/tree/main/Class%20Reading/Linked-lists)
 
 ### [Class 06](https://github.com/AymanMalkawi122/reading-notes/tree/main/Class%20Reading/class06)
+
+### [Class 07](https://github.com/AymanMalkawi122/reading-notes/tree/main/Class%20Reading/class07)
