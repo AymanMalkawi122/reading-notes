@@ -47,4 +47,4 @@
 
 ## Things I want to know more about
 
-How to improve your Big O analytical skills.
+How to improve My Big O analytical skills.
