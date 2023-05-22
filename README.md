@@ -37,3 +37,5 @@ This website is for documenting the knowledge and experience I gain during ASAC'
 ### [Stacks-and-Queues](https://github.com/AymanMalkawi122/reading-notes/tree/main/Class%20Reading/Stacks-and-Queues)
 
 ### [Class 08](https://github.com/AymanMalkawi122/reading-notes/tree/main/Class%20Reading/class08)
+
+### [Class 09](https://github.com/AymanMalkawi122/reading-notes/tree/main/Class%20Reading/class09)
