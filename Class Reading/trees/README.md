@@ -1,4 +1,4 @@
-# Linked Lists
+# Trees
 
 ***WHY:*** Tree data structures are important because they provide an efficient way to organize and store hierarchical data. They allow us to represent relationships between entities, such as parent-child relationships or hierarchical classifications. Trees are widely used in various domains, including computer science, data structures, and databases, as they enable efficient searching, insertion, and deletion operations.
 
