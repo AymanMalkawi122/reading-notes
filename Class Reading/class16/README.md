@@ -3,68 +3,34 @@
 
 ## Reading  Questions
 
-### 1. What are the key characteristics of serverless computing, and how does it differ from traditional server-based architectures?
+### 1. What are the key differences between scraping static and dynamic websites?
 
-* No Server Management: Developers are relieved from server provisioning, scaling, and infrastructure management.
+***Static websites:*** Static websites have fixed ```HTML``` content that is already present in the source code. When you request a page from a static website, the server simply sends the pre-built ```HTML``` file to your browser. The content of a static website remains the same until it is manually updated. Scraping a static website involves parsing the ```HTML``` structure and extracting the desired data using techniques like web scraping libraries or regular expressions.
 
-* Event-driven Execution: Serverless functions are triggered by specific events or requests, and the infrastructure automatically scales based on demand.
+***Dynamic websites:*** Dynamic websites, on the other hand, generate content dynamically in response to user interactions or database queries. The server processes the user's request and generates ```HTML``` content on the fly. This means that the ```HTML``` structure of a dynamic website may change based on the user's actions or other factors. Scraping a dynamic website often requires more advanced techniques, such as using headless browsers or making requests to APIs that provide the required data.
 
-* Pay-per-Use Billing: Billing is based on actual execution time, providing cost optimization.
+### 2. Explain at least three techniques or best practices that can be employed to avoid getting blocked while scraping websites
 
-* Stateless Execution: Functions are stateless, enabling easy scaling and parallel execution.
+1. Respectful Crawling: To avoid overwhelming a website's server and being flagged as a bot, it's crucial to practice respectful crawling. This involves setting a reasonable crawl rate by adding delays between requests and adhering to any rules specified in the website's robots.txt file. By simulating human-like behavior and avoiding excessive requests, you can minimize the risk of being blocked.
 
-* Automatic Scalability: Serverless platforms automatically scale functions based on workload, handling sudden spikes in traffic.
+2. User-Agent Rotation: Websites often track user agents to identify automated bots. By rotating the User-Agent header in your requests, you can make your scraping requests appear more like regular user traffic. Using a variety of user agents and occasionally mimicking popular web browsers can help you fly under the radar and avoid detection.
 
-* Rapid Deployment and Scaling: Functions can be deployed independently, and the infrastructure manages scaling and distribution.
+3. Proxy Rotation: Employing a pool of proxies can help distribute your requests across different IP addresses, making it harder for websites to track and block your scraping activity. By rotating proxies, you can avoid hitting rate limits, prevent IP blocking, and maintain a level of anonymity. It's essential to use reputable proxy providers and ensure that your code is configured correctly to handle proxy rotation seamlessly.
 
-### 2. How can one get started with Vercel, and what are the main steps involved in deploying a serverless function using Vercel?
+### 3. What is Playwright, and how does it assist in web scraping tasks? Provide an example of a use case where Playwright would be particularly beneficial
 
-1. Create an account on Vercel's website.
-2. Install the Vercel CLI (Command Line Interface) tool on your local machine.
-3. Set up your project using the Vercel CLI by logging in and initializing your project.
-4. Create a serverless function in your project, which will handle incoming requests.
-5. Deploy your project using the Vercel CLI and follow the prompts.
-6. Test and monitor your deployed serverless function using the provided URL.
-7. Customize your deployment with options like custom domains, environment variables, and routing.
-8. Scale your serverless functions easily to handle increased traffic or load.
+* Playwright simplifies web scraping by providing a powerful and user-friendly interface to automate browser actions. Its cross-browser compatibility and support for dynamic web pages make it a valuable tool for scraping tasks that require interacting with JavaScript-heavy websites and extracting data efficiently.
 
-### 3. What are APIs, and how can they be utilized in Python applications to access and manipulate data from external sources?
+* A use case where Playwright can be particularly beneficial is scraping dynamic web pages that heavily rely on JavaScript. Traditional scraping approaches may struggle to handle dynamic content, but Playwright's ability to execute JavaScript and interact with the page's elements makes it well-suited for such tasks.
 
-APIs, or Application Programming Interfaces, enable software applications to communicate with each other.
+### 4. Describe the purpose of using Xpath in web scraping, and provide an example of an Xpath expression to select a specific HTML element from a webpage
 
-***To use APIs in Python applications:***
+* ```XPath``` is a powerful querying language used in web scraping to navigate and extract data from ```HTML``` and ```XML``` documents. It allows you to locate specific elements within the document structure based on their tag name, attributes, or their position in the hierarchy.
 
-1. Explore the API documentation to understand available endpoints and request parameters.
-2. Make API requests using libraries like ***requests***, specifying the URL, method, headers, and parameters.
-3. Handle the API response, accessing and manipulating the data as needed.
-4. Process and manipulate the retrieved data according to the application's requirements.
-5. Implement error handling to address potential issues during API interactions.
-6. Integrate the retrieved data into the Python application for display, analysis, or other purposes.
-
-### 4. What is the Requests library in Python, and how can it be used to interact with APIs by sending HTTP requests? Can you provide an example of a basic GET request using the Requests library?
-
-The Requests library is a popular Python library used for making HTTP requests. It provides a high-level interface and simplifies the process of interacting with APIs by handling the underlying complexities of sending and receiving HTTP requests.
+* Let's consider an example where we want to extract the titles of all the articles listed on a news website. Assume that the article titles are contained within ```<H2>``` tags with a class attribute of "article-title". Here's an XPath expression to select those elements:
 
 ### ***Example***
 
 ```python
-import requests
-
-# Send a GET request to an API endpoint
-response = requests.get('https://api.com')
-
-# Check the response status code
-if response.status_code == 200:
-    # The request was successful
-    data = response.json()  # Get the response data in JSON format
-    # Process the data as needed
-    for post in data:
-        print(post['title'])
-else:
-    # The request was not successful
-    print('Error:', response.status_code)
+//h2[@class='article-title']
 ```
-
-## Things I want to know more about
-
-process communication using sockets
