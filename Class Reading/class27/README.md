@@ -17,7 +17,7 @@
 * It offers features like search, filtering, pagination, and customizable forms for creating and editing records.
 * The Admin interface can be customized to suit the specific needs of a project by modifying the admin.py file, where you can define custom admin classes, override default behavior, and add additional functionality.
 
-### 3. What is the purpose of Tailwind CSS, and how does it differ from Bootstrap CSS?
+### 3. Briefly outline the key components and workflow of a Django application, as discussed in the Beginner’s Guide to Django. How do these components interact with each other to create a functional web application?
 
 The key components of a Django application include models, views, templates, and URLs. The workflow generally follows these steps:
 
