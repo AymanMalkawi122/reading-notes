@@ -51,3 +51,5 @@ This website is for documenting the knowledge and experience I gain during ASAC'
 ### [Class 16](/Class%20Reading/class16/)
 
 ### [Class 26](/Class%20Reading/class26/)
+
+### [Class 27](/Class%20Reading/class27/)
