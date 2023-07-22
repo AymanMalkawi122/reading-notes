@@ -59,3 +59,5 @@ This website is for documenting the knowledge and experience I gain during ASAC'
 ### [Class 29](/Class%20Reading/class29/)
 
 ### [Hash Tables](/Class%20Reading/hash_tables/)
+
+### [Class 31](/Class%20Reading/class31/)
