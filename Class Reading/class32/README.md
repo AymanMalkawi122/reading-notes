@@ -1,54 +1,48 @@
-# Class 32
+# Class 33
 
 ## Reading  Questions
 
-### 1. What are the key components and purpose of Django Rest Framework (DRF) permissions, and how do they help in securing an API?
+### 1. What is the primary purpose of JSON Web Tokens (JWTs) and how do they work in terms of encoding and decoding data?
 
-* Django Rest Framework (DRF) permissions:
+The primary purpose of JSON Web Tokens (JWTs) is to securely transmit information between parties in a compact and self-contained way.
 
-    DRF permissions are a key component that allows developers to control access and secure APIs. They define rules for granting or denying access to specific views or API endpoints based on various conditions. DRF provides several built-in permission classes, such as IsAuthenticated, IsAdminUser, IsAuthenticatedOrReadOnly, and custom permission classes.
+JWTs are commonly used for authentication and authorization in web applications.
 
-* Purpose of DRF permissions:
+They consist of three parts: a header, a payload, and a signature. The header typically contains the token's type (JWT) and the signing algorithm used.
 
-    DRF permissions play a crucial role in securing APIs by enforcing rules like authentication, authorization, and access control. They ensure that only authorized users or groups can perform specific actions on API resources, preventing unauthorized access and potential security vulnerabilities.
+The payload contains the claims (e.g., user information or permissions) that are digitally signed to ensure data integrity.
 
-* Usage of DRF permissions:
+The signature is generated using a secret key known only to the server, which ensures that the token has not been tampered with during transmission.
 
-    To use DRF permissions, you can specify them in the permission_classes attribute of a Django view or API viewset. For example, to require authentication for accessing a view, you can use the IsAuthenticated permission class
+The recipient can use the secret key to verify the token's authenticity and extract the information from the payload.
 
-### 2. In SQL, what is the purpose of the SELECT statement, and how would you use it to retrieve all columns from a table called ‘employees’?
+### 2. How does JWT Authentication integrate with Django REST Framework to secure API endpoints, and what are the key components involved in this process?
 
-* Purpose of the SELECT statement in SQL:
-The SELECT statement in SQL is used to retrieve data from a database table. It allows you to query and fetch specific columns and rows from a table based on certain conditions.
+In Django REST Framework (DRF), JWT Authentication can be integrated to secure API endpoints. The key components involved in this process are:
 
-* Retrieve all columns from the 'employees' table:
-To retrieve all columns from the 'employees' table, you would use the following SQL query:
+* DRF's JSONWebTokenAuthentication: This is a custom authentication class provided by DRF that allows the use of JWTs for authentication.
 
-```sql
-SELECT * FROM employees;
-```
+* djangorestframework_simplejwt Library: This third-party library provides a simple and secure JWT implementation for Django REST Framework. It offers customizable token settings and token refreshing capabilities.
 
-### 3. Can you explain the role of DRF Generic Views and provide examples of their usage in building a RESTful API?
+* TokenObtainPairView and TokenRefreshView: These views provided by the djangorestframework_simplejwt library are used to obtain and refresh JWT tokens. The TokenObtainPairView generates a token when a user provides valid credentials, while the TokenRefreshView refreshes the token when it's expired.
 
-* DRF Generic Views:
+* JWT_SECRET_KEY and JWT_ALGORITHM: These settings in the Django settings.py file define the secret key and the hashing algorithm used for token generation and verification.
 
-    DRF Generic Views are a set of pre-implemented views provided by Django Rest Framework. They offer simple, reusable views for common tasks, reducing the amount of code required to build RESTful APIs.
+### 3. Why is Django’s built-in runserver not suitable for production environments, and what are some alternative server options that should be considered for deploying a Django application?
 
-* Role of DRF Generic Views:
+Django's built-in runserver is a development server designed for ease of use during development and testing. However, it is not suitable for production environments due to several limitations:
 
-    DRF Generic Views streamline API development by providing default implementations for common CRUD (Create, Read, Update, Delete) operations. They map HTTP methods (GET, POST, PUT, DELETE) to the corresponding actions on the API views, simplifying the process of creating API endpoints.
+* Single-Threaded and Not Production-Ready: The runserver is single-threaded, meaning it can only handle one request at a time, which can lead to poor performance and scalability issues in production.
 
-For example, to create a simple API view for listing all objects of a model:
+* Lack of Security Features: The runserver does not provide all the security features required for a production server, such as HTTPS support and built-in security settings.
 
-```python
-Copy code
-from rest_framework.generics import ListAPIView
-from .models import MyModel
-from .serializers import MyModelSerializer
+* Limited Configuration Options: The runserver has limited configuration options, making it less flexible for handling complex production environments.
 
-class MyModelListView(ListAPIView):
-    queryset = MyModel.objects.all()
-    serializer_class = MyModelSerializer
-```
+Alternative Server Options for Deploying a Django Application:
+For deploying a Django application in production, it's recommended to use a production-ready server. Some popular options include:
 
-Here, ListAPIView provides the default implementation to list all objects of the MyModel model and serialize them using the MyModelSerializer. Similarly, DRF Generic Views offer other view classes like CreateAPIView, RetrieveAPIView, UpdateAPIView, and DestroyAPIView, making it easy to create views for various API operations with minimal code.
+1. Gunicorn (Green Unicorn): Gunicorn is a pre-fork worker model HTTP server that is compatible with many web frameworks, including Django. It supports multiple workers, allowing concurrent handling of requests and improved performance.
+
+2. uWSGI: uWSGI is a fast and powerful application server that can serve Django applications and offers various features, including load balancing, caching, and advanced process management.
+
+3. Apache with mod_wsgi or Nginx with uWSGI: These web servers can be configured to work with Django using WSGI (Web Server Gateway Interface) for serving Python applications. They offer robust performance and support additional features like SSL/TLS termination and reverse proxying.
