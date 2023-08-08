@@ -68,5 +68,5 @@ This website is for documenting the knowledge and experience I gain during ASAC'
 
 ### [Class 34](/Class%20Reading/class34/)
 
-### [Class 36](/Class%20Reading/class36/)
+### [Class 36](/Class%20Reading/class36/README.md)
 
