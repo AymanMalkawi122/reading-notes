@@ -73,3 +73,5 @@ This website is for documenting the knowledge and experience I gain during ASAC'
 ### [Graph](https://github.com/AymanMalkawi122/reading-notes/blob/main/Class%20Reading/graph/README.md)
 
 ### [Class 37](https://github.com/AymanMalkawi122/reading-notes/blob/main/Class%20Reading/class37/README.md)
+
+### [Class 38](https://github.com/AymanMalkawi122/reading-notes/blob/main/Class%20Reading/class38/README.md)
